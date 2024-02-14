@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Json Example</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Create variable, anything in JSON is valid javascript
+        let companies = 
+        `[
+    {
+        "name": "Big Corporation",
+        "numberOfEmployees": 10000,
+        "ceo": "Mary",
+        "rating": 4.8
+    },
+    {
+        "name": "Small Startup",
+        "numberOfEmployees": 3,
+        "ceo": null,
+        "rating": 3.2
+    }
+]`
+//JSON.parse will take a string and convert it into a javascript object
+console.log(JSON.parse(companies)[0].name)
+    </script>
+</body>
+</html>
